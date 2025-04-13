@@ -80,7 +80,8 @@ int lose(int *definemsg)
     int find = 0;
     for(int i=0;i<strlen(palavra);i++){
         if(inputs[tentativa-1] == palavra[i]){
-            find++;   
+            find++;
+            break;
         }
     }
     if (!find){
